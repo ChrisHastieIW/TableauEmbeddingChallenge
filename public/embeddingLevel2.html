@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Embedding Level 2</title>
+
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript"
+    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+  <script type="text/javascript" src="js/embeddingLevel2.js"></script>
+
+</head>
+
+<body>
+  <div id="allFilters" class="main">
+    <h5>All Filters</h5>
+    <table id="filtersTable" class="table">
+      <tr>
+        <th> Worksheet </th>
+        <th> Field </th>
+        <th> Is "All" Selected? </th>
+        <th> Applied Values </th>
+        <th></th>
+      </tr>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <button id="clearButton" class="btn btn-primary">Clear all filters</button>
+  </div>
+  <p>
+    <label for="filtersTextBox">
+      <span>Filters text box:</span>
+      <textarea readonly id="filtersTextBox" placeholder="Filters will go here" rows="1" cols="60" maxlength="4096"></textarea>
+    </label>
+  </p>
+  <div id="vizContainer" style="width:800px; height:700px;"></div>
+</body>
+
+</html>

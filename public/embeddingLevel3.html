@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Embedding Level 3</title>
+
+  <!-- CDNs
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  -->
+  <!-- Local installations -->
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+  <script type="text/javascript"
+    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+  <script type="text/javascript" src="js/embeddingLevel3.js"></script>
+
+</head>
+
+<body>
+  <div id="loginDetails" class="main">
+    <h5>Login Details</h5>
+    <p>
+      <label for="username">
+        <span class="layout">Username:</span>
+        <input id="username" name="username" value="chris.hastie.interworks@gmail.com" type="text" maxlength="256" required>
+      </label>
+    </p>
+    <p>
+      <label for="password">
+        <span class="layout">Password:</span>
+        <input id="password" name="password" type="password" maxlength="256" required>
+      </label>
+    </p>
+    If your password is wrong, this will just error. I have not configured verification
+    </p>
+    <button id="retrieveRecommendedViewsButton" class="btn btn-primary">Retrieve Recommended Views</button>
+  </div>
+
+  <div id="recommendedViews" class="main">
+    <h5>Recommended Views</h5>
+    <div id="recommendedViewsWrapper" align="middle"> </div>
+  </div>
+  <div id="vizContainer" style="width:800px; height:700px;"></div>
+</body>
+
+</html>

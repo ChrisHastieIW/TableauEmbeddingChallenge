@@ -1,0 +1,26 @@
+.main {
+  margin-left: 10px;
+}
+
+label span {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+input, textarea, select {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+label {
+  position: relative;
+}
