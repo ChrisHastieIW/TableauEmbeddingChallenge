@@ -11,7 +11,7 @@ This is a playground for my personal Tableau developer work.
 Once installed, clone this repository:
 
 ```sh
-$ git clone https://github.com/ChrisHastieIW/snow-tools.git
+$ git clone https://github.com/ChrisHastieIW/TableauEmbeddingChallenge.git
 ```
 
 Install the dependencies into the public/lib folder:
